@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+  font-size: 20px;
+}
+
+header {
+  background: #c9e1d9;
+  color: rgb(17, 52, 87);
+  padding: 40px;
+  text-align: left;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+h1 {
+    font-family: 'Playpen Sans', sans-serif;
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-style: italic;
+}
+
+h3{
+    font-size:30px;
+}
+
+p{
+    font-size: 1.3rem;
+    line-height:v1.6;
+}
+
+main {
+  padding: 20px;
+}
+
+.about {
+  display: flex;
+  align-items: center;    
+  gap: 20px;              
+}
+
+.about img {
+  width: 200px;           
+  height: auto;
+}
+
+img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.api-buttons {
+  display: flex;
+  flex-direction: column;      
+  align-items: center;         
+  gap: 15px;                   
+  margin-top: 10px;
+}
+
+.api-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #c4d5ea; 
+  color: rgb(10, 23, 177);
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.api-btn:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+
+.method {
+    background: #09005a;
+    color: white;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    margin-right: 0.5rem;
+}
+
+.container {
+  max-width: 1200px; 
+  margin: 0 auto;    
+  padding: 0 20px;   
+  box-sizing: border-box;
+}
+
+
+footer {
+  background: #ddd;
+  text-align: center;
+  padding: 10px;
+}

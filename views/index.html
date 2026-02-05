@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Wildlife Sighting Tracker</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+    <h1>Wildlife Sighting Tracker</h1>
+    <h2>Documenting Canada's Amazing Wildlife</h2>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+        <!--about me-->
+    <h3>About Me!</h3>
+    <section class="about">
+      <img src="/images/harry_potter_image.png" alt="Photo">
+      <p>
+       <h3>Hello! I’m Nancy</h3>
+       I am a web development student. This project gave me the chance to combine 
+       my love for nature with my coding skills.<br><br>
+       
+        I built the Wildlife Sighting Tracker as part of my coursework, using Node.js and 
+        Express.js on the backend, and HTML5, CSS, and JavaScript on the front end. The app lets users log and explore wildlife sightings, making it easy and fun to connect with nature while practicing modern web development.
+      </p>
+    </section>
+
+    <!-- Personal Info -->
+        <section id="personal-info">
+            <h3>Personal Information</h3>
+            <ul>
+                <li>Interests: Nature, Photography</li>
+                <li>Hobbies: Sleeping, Gardening, Coding Projects</li>
+                <li>Major: Computer Programming</li>
+                <li>Why Web Development: I have always been fascinated by technology and how web applications work. Since childhood, I was drawn to creating applications that can have a real-world impact. The idea of building something that people can use and interact with online has always inspired me to learn and grow in this field.</li>
+            </ul>
+        </section>
+
+    <!--about the project-->
+
+    <section>
+      <h3>Project Description</h3>
+      <ul>
+        <li>Backend built using <strong>Express.js</strong> for handling server requests and routing.</li>
+        <li>Provides structured dataset including <strong>species, location, habitat, observation date, and verification status</strong>.</li>
+        <li>Implements API endpoints to:
+            <ul>
+                <li>Retrieve all wildlife sightings</li>
+                <li>Filter sightings by verification status</li>
+                <li>Get unique species list</li>
+                <li>Filter sightings by habitat type</li>
+                <li>Search sightings by animal name</li>
+                <li>Retrieve the three most recent sightings</li>
+            </ul>
+        </li>
+        <li>Frontend uses <strong>HTML5, CSS, and responsive design</strong> for a clean user interface.</li>
+        <li>Data is presented in a clear, tabular format for easy analysis of trends and patterns.</li>
+        <li>Implements interactive features like search and filters to improve user experience.</li>
+        <li>Combines real-time data handling with a responsive UI for efficient monitoring of wildlife sightings.</li>
+    </ul>
+    </section>
+
+    <!--listing API endpoints-->
+
+    <section>
+      <h3>API Endpoints</h3>
+  <div class="api-buttons">
+    <a href="/api/sightings" class="api-btn">
+        <div>
+            <code class="method">GET</code>
+            <code class="route">/api/sightings</code>
+            <p>Returns all wildlife sighting records</p>
+        </div>
+    </a>
+    <a href="/api/sightings/verified" class="api-btn">
+        <div>
+            <code class="method">GET</code>
+            <code class="route">/api/sightings/verified</code>
+            <p>Returns only verified sightings</p>
+        </div>
+    </a>
+    <a href="/api/sightings/species-list" class="api-btn">
+        <div>
+            <code class="method">GET</code>
+            <code class="route">/api/sightings/species-list</code>
+            <p>Returns unique species names</p>
+        </div>
+    </a>
+    <a href="/api/sightings/habitat/forest" class="api-btn">
+        <div>
+            <code class="method">GET</code>
+            <code class="route">/api/sightings/habitat/forest</code>
+            <p>Returns all sightings in forest habitat along with the count</p>
+        </div>
+    </a>
+    <a href="/api/sightings/search/eagle" class="api-btn">
+        <div>
+            <code class="method">GET</code>
+            <code class="route">/api/sightings/search/eagle</code>
+            <p>Searches for the first sighting of an eagle</p>
+        </div>
+    </a>
+    <a href="/api/sightings/find-index/moose" class="api-btn">
+        <div>
+            <code class="method">GET</code>
+            <code class="route">/api/sightings/find-index/moose</code>
+            <p>Finds the index of the moose sighting</p>
+        </div>
+    </a>
+    <a href="/api/sightings/recent" class="api-btn">
+        <div>
+            <code class="method">GET</code>
+            <code class="route">/api/sightings/recent</code>
+            <p>Returns the 3 most recent sightings</p>
+        </div></a>
+  </div>
+</div>
+  </main>
+
+  <footer>
+    <div class="container">
+    <p>Nancy Rana – WEB322</p>
+    </div>
+  </footer>
+</body>
+</html>
